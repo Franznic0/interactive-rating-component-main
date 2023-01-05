@@ -12,42 +12,77 @@
 
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
   <!-- Rating state start -->
+  
+  <div class="container-rating">
+    <div class="star-container">
+      <img src="./images/icon-star.svg" alt="Star">
+    </div>
+    
+    <h2 class="container-rating-title">
+      How did we do?
+    </h2>
 
-  How did we do?
+    <p class="container-rating-description">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    
+    <form class="container-rating-forum" action="#">
+      <div class="rating-wrap">
+        <input type="radio" label="1" name="rate-one" value="1" class="ratings">
+        <input type="radio" label="2" name="rate-two" value="2" class="ratings">
+        <input type="radio" label="3" name="rate-three" value="3" class="ratings">
+        <input type="radio" label="4" name="rate-four" value="4" class="ratings">
+        <input type="radio" label="5" name="rate-five" value="5" class="ratings">
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <button  class="submit">submit</button>
+    </form>
 
-  1 2 3 4 5
 
-  Submit
+  </div>
+
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <div class="container-thankyou">
 
-  Thank you!
+    <div class="container-thankyou-image">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you for your rating">
+    </div>
+    
+    <p class="selcted-result">
+      You selected <span class="rate-value"></span> out of 5
+    </p>
+  
+    <h2 class="container-thankyou-thanks">
+      Thank you!
+    </h2>
+  
+    <p class="container-thankyou-description">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  </div>
 
   <!-- Thank you state end -->
 
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Franznic0" target="_blank">Francesco Nicolosi</a>.
+    </p>
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
