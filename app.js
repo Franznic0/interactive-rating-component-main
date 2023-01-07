@@ -9,13 +9,11 @@ submit.addEventListener('click', () => {
     
     /* rate handler */
     
-    let selectedRate;
+    let selectedRate = 0;
     for ( const rate of rates) {
         if (rate.checked) {
             selectedRate = rate.value;
             break;
-        } else {
-            selectedRate = '0';
         }
     }
 
