@@ -176,10 +176,15 @@
     transition: .3s ease;
   }
 
-  .submit:hover {
-    background: var(--light-pry);
-    color: var(--primary);
-  }
+  @media (min-width: 600px) {
+
+      .submit:hover {
+        background: var(--light-pry);
+        color: var(--primary);
+      }
+  
+    }
+  
 
   /* thank you state */
 

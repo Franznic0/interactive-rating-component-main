@@ -4,9 +4,6 @@ const containerRating = document.querySelector('.container-rating');
 const conatinerThankyou = document.querySelector('.container-thankyou');
 const rateValue = document.querySelector('.rate-value');
 
-submit.addEventListener('click', e => {
-    console.log(rates.checked);
-})
 
 submit.addEventListener('click', () => {
     
@@ -17,7 +14,9 @@ submit.addEventListener('click', () => {
         if (rate.checked) {
             selectedRate = rate.value;
             break;
-        } 
+        } else {
+            selectedRate = '0';
+        }
     }
 
     rateValue.textContent = selectedRate;
@@ -25,6 +24,8 @@ submit.addEventListener('click', () => {
     /* add animation Thank you card */
     conatinerThankyou.classList.add('active-animation');
     
+
+    /* reset */
     setTimeout(() =>{
 
             /* remove active-animation class */
